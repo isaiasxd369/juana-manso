@@ -1,0 +1,194 @@
+
+
+.body,.bod{
+	
+	background-color: #313052;
+	z-index:100;
+	margin-top: 100px;
+}
+
+.cabecera ,.h1{
+
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-style:italic;
+font-size:xx-large;
+font-weight: 1500 px;
+text-align:center ;
+display: flex;
+background-color:#17A2B8;
+
+}
+
+
+.bxl-facebook-square{
+	color: #00ff0d;
+	background-color: large ;
+	
+}
+.bxl-facebook-square:hover{
+
+	background-color:blue;
+	font-size:xx-large;
+}
+
+
+.p{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style:italic;
+	font-size:xx-large;
+	font-weight: 1000;
+	text-align:justify;
+	display: flex;
+    color:aqua;
+
+
+}
+.sub-carreras{
+color:aqua; 
+margin-top: 1px;
+float:center;
+text-align:center;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:xx-large;
+display:block;
+ 
+}
+
+.histo,p{
+	font-family:'Roboto', sans-serif;
+	font-size: xx-large;
+	font-weight: 200;
+	font-style: italic;
+	color:azure;
+	text-align: justify;
+
+
+}
+.formar{
+
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    color:aqua;
+    font-size:xx-large;
+	text-align: center;
+   
+	
+}
+#imagen1{
+
+	width: 200px;
+	height: 250px;
+	margin: 10px;
+	float:left;
+	padding: 5px;
+	contain: fixed;
+    display:block;
+	border: 2px solid #00ff0d;
+   	
+}
+
+	
+
+
+.navegacion{
+	width: 800px;
+	height:120 px;
+	
+	padding: 5px;
+	float:right;
+	background-color: azure;
+	display:flex;
+}
+.navegacion{
+	margin-right: 0px;
+	margin-top: -3px;
+} 
+.navegacion ul{
+	list-style: none;
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #1121f8;
+	font-family: 'Open sans';
+	text-decoration:uppercase;
+}
+
+.menu li a:hover{
+	color: #ebf1ec;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position:absolute;
+	background:#f0ffff;
+	
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	display:block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.pie{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: xx-large;
+font-style:oblique;
+font-weight:400;
+text-align: center;
+margin:1px;
+margin-bottom: -200px;
+color:aqua;
+
+}
+.h3{
+
+	color: aqua; 
+	margin:10px;
+	margin-top: -360px;
+	float:right;
+	 text-align:top ;
+	 font-family: arial;
+	 font-size:x-large;
+
+}
+
+
+li a.active, li a:hover{
+    background: #51cc49;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+
