@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+#img {
+    display: flex;
+    align-items: center;
+}
+
+#imagen1 img {
+height: 100px;
+margin-left: 10px;
+}
+
+.navegacion .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+}
+
+.navegacion .menu li {
+    margin: 0 15px;
+}
+
+.navegacion .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navegacion .menu a:hover,
+.navegacion .menu .active {
+    background-color: #003f7f;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+.sub-carreras {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.histo {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 16px;
+}

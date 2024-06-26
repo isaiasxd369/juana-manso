@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+#imagen1 {
+    display: flex;
+    align-items: center;
+}
+
+#imagen1 img {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.navbar {
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #004499;
+}
+
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #ecf0f1;
+    margin: 30px 20%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #34495e;
+    font-family: sans-serif;
+}
+
+.contact-info h2 {
+    color: #e67e22;
+    margin: 10px 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.social-media img {
+    padding: 0;
+    width: 150px;
+    margin: 0;
+}
+
+.social-media p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #1e9aaa;
+}

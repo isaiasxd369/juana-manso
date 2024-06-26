@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+#imagen {
+    display: flex;
+    align-items: center;
+}
+
+#imagen1 img {
+ height: 100px;
+ margin-left: 10px;
+}
+
+.navbar {
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #004499;
+}
+
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    height: 100vh;
+}
+
+h1 {
+    color: blue;
+    margin: 0% 10% 2%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: xx-large;
+}
+
+.sub-title {
+    color: #1e9aaa;
+    margin: 4% 10% 2%;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.sub-title p {
+    text-align: center;
+}
+
+.email {
+    color: hsl(190, 44%, 45%);
+    margin: 4% 10% 2%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: xx-large;
+}
+
+.email center {
+    color: white;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie h2 {
+    margin: 0;
+    font-size: 18px;
+}

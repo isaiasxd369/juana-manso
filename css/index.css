@@ -1,0 +1,204 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-container {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #97be85;
+    color: #ffffff;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.navbar {
+    background-color: #c9deb4;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los elementos del menú */
+.menu li {
+    position: relative;
+}
+
+/* Estilos para los enlaces del menú */
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #022c10;
+}
+
+/* Estilos para los submenús */
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #08541b;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+footer div {
+    background-color: #fbffe3;
+    text-align: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+img {
+    transition: box-shadow 0.3s ease;
+    background-color: #97be85;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+img {
+    box-shadow: 0 0.7rem 0.4rem rgba(5, 28, 1, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+.frente {
+    margin: center;
+    padding: 200px;
+}
+
+.pie {
+    background-color: #1E570C;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pie h3 {
+    padding: 15px 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container h1 {
+        font-size: 28px;
+    }
+
+    #logo {
+        margin-top: 10px;
+    }
+
+    #logo img {
+        height: 80px;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li ul.submenu {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 24px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    footer div {
+        padding: 20px;
+    }
+
+    .frente {
+        padding: 20px;
+    }
+
+    .pie h3 {
+        font-size: 14px;
+    }
+
+    /* Ajustes para iframe del mapa de Google */
+    .footer-content iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content div {
+        padding: 10px;
+    }
+}
