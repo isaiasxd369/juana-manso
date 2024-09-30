@@ -1,0 +1,208 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/* Encabezado */
+header {
+    background-color: #387e3a;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo del logo */
+#logo img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #246126;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #387e3a;
+}
+
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #246126;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+/* Estilo para la nueva sección de imagen */
+.image-section {
+    text-align: center;
+    margin: 30px auto; /* Añade espacio arriba y abajo */
+    max-width: 800px; /* Limita el tamaño máximo de la sección */
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 100%; /* La imagen no se excederá del ancho de su contenedor */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para un toque moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+
+/* Contenedor de Carreras */
+.sub-carreras {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-carreras h2 {
+    font-size: 28px;
+    color: #0056b3;
+}
+
+/* Sección histo */
+.histo {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    line-height: 1.8; /* Mejora la legibilidad */
+    max-width: 800px;
+    margin: 0 auto; /* Centra la sección */
+}
+
+.histo p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #333333;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px; /* Reduce el padding */
+    margin-top: 30px; /* Asegura que el footer se pegue al fondo */
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1rem; /* Reduce el tamaño de fuente */
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.8rem;
+    }
+
+    .histo {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .histo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    .menu li a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.5rem;
+    }
+
+    .histo p {
+        font-size: 14px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
