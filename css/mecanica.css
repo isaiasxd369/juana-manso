@@ -1,114 +1,186 @@
-/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-.contenedor {
-    font-weight: 200;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #007bff;
-    color: #ffffff;
-}
-
+/* Encabezado */
 header {
-    background-color: #007bff;
+    background-color: #387e3a; /* Color de fondo */
     padding: 20px;
-    color: #ffffff;
     text-align: center;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 34px;
     margin: 0;
+    font-size: 2.5rem;
 }
 
-#imagen1 img {
-    display: block;
-    margin: 20px auto;
-    height: 50px;
+/* Estilo del logo */
+#logo img {
+    width: 150px;
+    margin: 0 10px;
 }
 
-.navegacion .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar {
+    background-color: #246126;
     display: flex;
     justify-content: center;
-    background-color: #0056b3;
+    width: 100%;
 }
 
-.navegacion .menu li {
-    margin: 0 15px;
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navegacion .menu a {
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
     transition: background-color 0.3s;
 }
 
-.navegacion .menu a:hover,
-.navegacion .menu .active {
-    background-color: #003f7f;
+.menu li a:hover {
+    background-color: #387e3a;
 }
 
-.submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.menu li ul.submenu {
     display: none;
     position: absolute;
-    background-color: #0056b3;
+    background-color: #246126;
+    z-index: 1;
 }
 
-.menu li:hover .submenu {
+.menu li:hover ul.submenu {
     display: block;
+    width: 250px;
 }
 
-.submenu li {
-    margin: 0;
+.menu li ul.submenu li {
+    width: 100%;
 }
 
-.submenu a {
-    padding: 10px 20px;
+.menu li ul.submenu li a {
+    padding: 12px 20px;
 }
 
-.sub-carreras {
-    background-color: #007bff;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
+/* Estilos para el contenido principal */
 main {
-    height: 90vh;
+    padding: 20px;
+    height: 100vh;
     width: 100vw;
 }
 
+.sub-carreras {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-carreras h2 {
+    font-size: 28px;
+    color: #0056b3;
+}
+
 .histo {
-    padding: 20px;
     background-color: #ffffff;
-    margin: 20px auto;
-    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer h2 {
+.histo p {
     margin: 0;
     font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .menu {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .menu li {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el texto de los enlaces */
+    }
+
+    .menu li a {
+        padding: 10px; /* Ajuste de padding */
+        font-size: 1rem; /* Tamaño de fuente para enlaces */
+    }
+
+    .frente img {
+        width: 90%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .texto-descripcion {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para texto */
+        width: 90%; /* Ancho más amplio en pantallas pequeñas */
+    }
+
+    .mapa iframe {
+        height: 300px; /* Ajusta la altura del mapa en pantallas pequeñas */
+    }
+
+    footer h3 {
+        font-size: 1rem; /* Ajuste de tamaño para el pie de página */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Tamaño de fuente aún más pequeño */
+    }
+
+    .menu li a {
+        padding: 8px; /* Ajuste de padding */
+        font-size: 0.9rem; /* Tamaño de fuente aún más pequeño */
+    }
+
+    .frente img {
+        width: 100%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    }
+
+    .texto-descripcion {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para texto */
+    }
+
+    .mapa iframe {
+        height: 250px; /* Ajusta la altura del mapa en pantallas pequeñas */
+    }
+
+    footer h3 {
+        font-size: 0.9rem; /* Ajuste de tamaño para el pie de página */
+    }
+}
+

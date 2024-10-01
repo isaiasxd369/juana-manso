@@ -4,11 +4,14 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
 }
 
 /* Encabezado */
 header {
-    background-color: #387e3a; /* Color de fondo */
+    background-color: #387e3a;
     padding: 20px;
     text-align: center;
     color: white;
@@ -26,6 +29,7 @@ header h1 {
     margin: 0 10px;
 }
 
+/* Navegación */
 .navbar {
     background-color: #246126;
     display: flex;
@@ -76,22 +80,14 @@ header h1 {
     padding: 12px 20px;
 }
 
-/* Imagen principal */
-.frente img {
-    display: block;
-    margin: 20px auto;
-    width: 80%; /* Ajusta el tamaño de la imagen */
-    max-width: 700px; /* Limita el tamaño máximo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
-}
-
-.frente {
+/* Estilo para la nueva sección de imagen */
+.image-section {
     text-align: center;
     margin: 30px auto; /* Añade espacio arriba y abajo */
     max-width: 800px; /* Limita el tamaño máximo de la sección */
 }
 
-.frente img {
+.image-section img {
     width: 100%;
     max-width: 100%; /* La imagen no se excederá del ancho de su contenedor */
     height: auto;
@@ -99,8 +95,20 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
 }
 
-/* Contenedor de texto */
-.texto-descripcion {
+
+/* Contenedor de Carreras */
+.sub-carreras {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-carreras h2 {
+    font-size: 28px;
+    color: #0056b3;
+}
+
+/* Sección histo */
+.histo {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -109,39 +117,29 @@ header h1 {
     line-height: 1.8; /* Mejora la legibilidad */
     max-width: 800px;
     margin: 0 auto; /* Centra la sección */
+}
+
+.histo p {
     margin-bottom: 16px;
     font-size: 18px;
     color: #333333;
     text-align: justify;
 }
 
-
-/* Mapa */
-.mapa {
-    text-align: center;
-    margin: 20px auto;
-}
-
-.mapa iframe {
-    width: 80%; /* Tamaño del mapa */
-    max-width: 700px;
-    height: 450px;
-    border: 0;
-}
-
-/* Pie de Página */
+/* Pie de página */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+    padding: 5px; /* Reduce el padding */
+    margin-top: 30px; /* Asegura que el footer se pegue al fondo */
 }
 
 footer h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduce el tamaño de fuente */
 }
+
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
