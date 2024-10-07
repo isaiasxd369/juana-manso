@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #387e3a; /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo del logo */
+#logo img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #246126;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #387e3a;
+}
+
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #246126;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    height: auto; /* Cambiado a auto para permitir contenido variable */
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0056b3;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.sub-title p {
+    margin: 5px 0;
+}
+
+.email h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #387e3a;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.email h1 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.8rem;
+    }
+
+    .histo {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .histo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    .menu li a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.5rem;
+    }
+
+    .histo p {
+        font-size: 14px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}

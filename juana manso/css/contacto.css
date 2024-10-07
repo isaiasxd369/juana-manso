@@ -1,0 +1,225 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #387e3a; /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo del logo */
+#logo img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.navbar {
+    background-color: #246126;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #387e3a;
+}
+
+.menu li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #246126;
+    z-index: 1;
+}
+
+.menu li:hover ul.submenu {
+    display: block;
+    width: 250px;
+}
+
+.menu li ul.submenu li {
+    width: 100%;
+}
+
+.menu li ul.submenu li a {
+    padding: 12px 20px;
+}
+
+
+.histo p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #0056b3;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-info li {
+    margin: 8px 0;
+}
+
+
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centra los iconos de redes sociales */
+}
+
+.social-icon {
+    width: 80px; /* Ajusta el tamaño del icono */
+    margin: 10px; /* Espaciado entre iconos */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.8rem;
+    }
+
+    .histo {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .histo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    .menu li a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .sub-carreras h2 {
+        font-size: 1.5rem;
+    }
+
+    .histo p {
+        font-size: 14px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
